@@ -1,4 +1,5 @@
 package com.example.calculator;
+import com.example.calculator.R;
 
 import android.os.Bundle;
 import android.view.View;
@@ -72,10 +73,12 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
         String inputText;
         
 
-        switch (v.getId()){
+        if(v.getId() == R.id.btn_cancel){
             // 清除按钮
-            case R.id.btn_cancel:
-                break;
+
+
+        }
+        else if(v.getId() ==R.id.btn_divide){
 
         }
 
