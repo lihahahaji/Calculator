@@ -13,8 +13,9 @@
         android:theme="@style/Theme.Calculator"
         tools:targetApi="31">
         <activity
-            android:name=".ActionUriActivity"
+            android:name=".ActReciveActivity"
             android:exported="false" />
+
         <activity
             android:name=".LoginSuccessActivity"
             android:exported="false" />
@@ -26,7 +27,7 @@
             android:exported="false"
             android:theme="@style/Theme.Calculator" />
         <activity
-            android:name=".LoginInputActivity"
+            android:name=".ActSendActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

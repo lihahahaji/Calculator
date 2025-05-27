@@ -34,12 +34,21 @@ public class ActionUriActivity extends AppCompatActivity implements View.OnClick
         int btn_id = v.getId();
 
         String phoneNum = "12345";
+        Intent intent = new Intent();
 
         if(btn_id == R.id.btn_dial){
-            Intent intent = new Intent();
+
+            // 创建一个拨号的 Action
+            intent.setAction(Intent.ACTION_DIAL);
             Uri uri = Uri.parse("tel:"+phoneNum);
             intent.setData(uri);
-            intent.setAction(Intent.ACTION_DIAL);
+            startActivity(intent);
+        }
+        else if(btn_id == R.id.btn_sms){
+            //  创建一个发短信的 Action
+            intent.setAction(Intent.ACTION_SENDTO);
+            Uri uri2 = Uri.parse("smsto:"+phoneNum);
+            intent.setData(uri2);
             startActivity(intent);
         }
 
