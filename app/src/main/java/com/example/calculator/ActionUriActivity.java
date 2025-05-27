@@ -38,7 +38,7 @@ public class ActionUriActivity extends AppCompatActivity implements View.OnClick
         if(btn_id == R.id.btn_dial){
             Intent intent = new Intent();
             Uri uri = Uri.parse("tel:"+phoneNum);
-            intent.setData(uri)
+            intent.setData(uri);
             intent.setAction(Intent.ACTION_DIAL);
             startActivity(intent);
         }
