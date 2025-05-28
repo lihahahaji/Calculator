@@ -8,11 +8,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Calculator">
-
+        <activity
+            android:name=".SwitchIOSActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".SwitchDefaultActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".CheckBoxActivity"
+            android:exported="true" />
         <activity
             android:name=".DrawableShapeActivity"
             android:exported="true" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
