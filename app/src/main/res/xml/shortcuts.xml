@@ -1,0 +1,66 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Add shortcuts that launch your app to a specific screen or task. -->
+    <!-- Learn more at https://developer.android.com/guide/topics/ui/shortcuts/creating-shortcuts -->
+    <!-- <shortcut android:shortcutId="SHORTCUT_ID" -->
+    <!--     android:enabled="true" -->
+    <!--     android:shortcutShortLabel="SHORTCUT_SHORT_LABEL" -->
+    <!--     android:shortcutLongLabel="SHORTCUT_LONG_LABEL" -->
+    <!--     android:shortcutDisabledMessage="SHORTCUT_DISABLED_MESSAGE"> -->
+    <!--     <intent -->
+    <!--         android:action="android.intent.action.VIEW" -->
+    <!--         android:targetClass="REPLACE_IT_WITH_FULL_QUALIFIED_CLASS" -->
+    <!--         android:targetPackage="REPLACE_IT_WITH_TARGET_PACKAGE" /> -->
+    <!-- </shortcut> -->
+
+    <!-- Integrate with Google Assistant App Actions for launching your app with various voice commands. -->
+    <!-- Learn more at: https://developers.google.com/assistant/app/overview -->
+    <!-- <capability android:name="actions.intent.OPEN_APP_FEATURE"> -->
+    <!--     Provide query fulfillment instructions for this capability, or bind it to a shortcut. -->
+    <!--     Learn more at: https://developers.google.com/assistant/app/action-schema -->
+    <!-- </capability> -->
+
+
+    <shortcut
+        android:shortcutId="first"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/first_short"
+        android:shortcutLongLabel="@string/first_long">
+
+        <intent android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.calculator"
+            android:targetClass="com.example.calculator.ActStartActivity"/>
+
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="second"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/second_short"
+        android:shortcutLongLabel="@string/second_long">
+
+        <intent android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.calculator"
+            android:targetClass="com.example.calculator.JumpFirstActivity"/>
+
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+
+    <shortcut
+        android:shortcutId="third"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/third_short"
+        android:shortcutLongLabel="@string/third_long">
+
+        <intent android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.calculator"
+            android:targetClass="com.example.calculator.LoginInputActivity"/>
+
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+</shortcuts>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Calculator"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
             android:name=".ReadStringActivity"
             android:exported="false" />
@@ -21,9 +21,17 @@
         <activity
             android:name=".ActReciveActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".LoginInputActivity"
+            android:exported="true" />
         <activity
             android:name=".LoginSuccessActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".JumpFirstActivity"
+            android:exported="true" />
         <activity
             android:name=".JumpSecondActivity"
             android:exported="false" />
@@ -32,13 +40,16 @@
             android:exported="false"
             android:theme="@style/Theme.Calculator" />
         <activity
-            android:name=".ActRequestActivity"
-            android:exported="true" >
+            android:name=".ActStartActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+
         </activity>
         <activity
             android:name=".CalculatorActivity"
